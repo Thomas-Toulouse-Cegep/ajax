@@ -7,9 +7,9 @@ class ManagerInformation
 
     private function __construct()
     {
-        $this->informations[0] = new Information("");
-        $this->informations[1] = new Information("");
-        $this->informations[2] = new Information("");
+        $this->informations[0] = new Information("a");
+        $this->informations[1] = new Information("b");
+        $this->informations[2] = new Information("c");
     }
 
     public static function getInstance()

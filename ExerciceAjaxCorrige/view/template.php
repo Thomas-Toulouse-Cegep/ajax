@@ -15,6 +15,7 @@
     <!-- sweetalert2 (swal) https://sweetalert2.github.io/ -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
