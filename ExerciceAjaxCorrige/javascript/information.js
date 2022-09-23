@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-   // const iconesSuppression = document.getElementsByClassName()
-   /*for (const iconeSuppression of iconesSuppression) {
+    const iconesSuppression = document.getElementsByClassName("fa-delete-left")
+   for (const iconeSuppression of iconesSuppression) {
         iconeSuppression.addEventListener("click",supprimerInformation);
-     }*/
+     }
 });
 
 function supprimerInformation(event) {
-     fetch("index.php?action=");
+    const formdData= new FormData()
+    formData.append("debut", $debut);
+    formData.append("nombre", $nombre);
+     fetch("index.php?action=information");
 }
