@@ -7,8 +7,8 @@
     <thead>
             <tr>
                 <th scope="col"></th>
-                <th scope="col">Firstname</th>
-                <th scope="col">Lastname</th>
+                <th scope="col">Nom :</th>
+                <th scope="col">Origine :</th>
                 <th scope="col">Email</th>
                 <th scope="col">Supprimer</th>
             </tr>
@@ -40,65 +40,59 @@
             </tr>
             <tr class="table-primary">
                 <td></td>
-                <td>Warning</td>
-                <td>Refs</td>
-                <td>bo@example.com</td>
-            </tr>
-            <tr class="table-success">
-                <td></td>
                 <td>Merguez</td>
                 <td>Activeson</td>
                 <td>act@example.com</td>
             </tr>
-            <tr class="table-danger">
+            <tr class="table-success">
                 <td></td>
                 <td>Soubressade piquante</td>
                 <td>Secondson</td>
                 <td>sec@example.com</td>
             </tr>
-            <tr class="table-warning">
+            <tr class="table-danger">
                 <td></td>
                 <td>Saucisse au couteau</td>
                 <td>Angie</td>
                 <td>angie@example.com</td>
             </tr>
-            <tr class="table-primary">
+            <tr class="table-warning">
                 <td></td>
                 <td>Saucisse au piment d'Espelette</td>
                 <td>Bo</td>
                 <td>bo@example.com</td>
             </tr>
-            <tr class="table-success">
+            <tr class="table-primary">
                 <td></td>
                 <td>Saucisse campagnarde</td>
                 <td>Bo</td>
                 <td>bo@example.com</td>
             </tr>
-            <tr class="table-danger">
+            <tr class="table-success">
                 <td></td>
                 <td>Saucisse de canard</td>
                 <td>Bo</td>
                 <td>bo@example.com</td>
             </tr>
-            <tr class="table-warning">
+            <tr class="table-danger">
                 <td></td>
                 <td>Saucisse de Toulouse</td>
                 <td>Bo</td>
                 <td>bo@example.com</td>
             </tr>
-            <tr class="table-primary">
+            <tr class="table-warning">
                 <td></td>
                 <td>Saucisse échalote</td>
                 <td>Bo</td>
                 <td>bo@example.com</td>
             </tr>
-            <tr class="table-success">
+            <tr class="table-primary">
                 <td></td>
                 <td>Saucisse méditerranéenne</td>
                 <td>Bo</td>
                 <td>bo@example.com</td>
             </tr>
-            <tr class="table-danger">
+            <tr class="table-success">
                 <td></td>
                 <td>Saucisse T'chorizette</td>
                 <td>Bo</td>
