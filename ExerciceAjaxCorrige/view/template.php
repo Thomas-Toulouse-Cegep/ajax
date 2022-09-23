@@ -15,7 +15,7 @@
     <!-- sweetalert2 (swal) https://sweetalert2.github.io/ -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/aa99fe7e94.js" crossorigin="anonymous"></script>">
+    <script src="https://kit.fontawesome.com/4533f21b50.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
