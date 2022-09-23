@@ -16,7 +16,7 @@
             <tr>
                 <td><?php echo $information->donnee; ?></td>
                 <!-- ... -->
-                <td><i class="fa fa-car" style="font-size:48px;"></i></td>
+                <td><i class="fa-solid fa-delete-left"></i></td>
                 <!-- <td>Icone de suppression de Font Awesome<td> -->
             </tr>
             <?php }?>
