@@ -38,4 +38,5 @@ class ManagerInformation
     {
         return $this->informations;
     }
+   
 }

@@ -99,12 +99,12 @@
                 <td>bo@example.com</td>
             </tr>
         </tbody>
-        <tbody>
+        <tbody scope="col" >
             <?php foreach ($informations as $information) {?>
-            <tr>
+            <tr scope="col">
                 <td><?php echo $information->donnee; ?></td>
                 <!-- ... -->
-                <td><i class="fa-solid fa-delete-left"></i></td>
+                <td ><i class="fa-solid fa-delete-left"></i></td>
                 <!-- <td>Icone de suppression de Font Awesome<td> -->
             </tr>
             <?php }?>
