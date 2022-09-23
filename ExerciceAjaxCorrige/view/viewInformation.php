@@ -11,19 +11,14 @@
             </tr>
         </thead>
         <tbody>
-<<<<<<< HEAD
          
         </tbody>
         <tbody scope="col" >
             <?php foreach ($informations as $information) {?>
             <tr scope="col-4">
-=======
-            <?php foreach ($informations as $information) {?>
-            <tr>
->>>>>>> 4e84669e2423ae3df40eb55e6c7303f034c322c6
-                <td><?php echo $information->donnee; ?></td>
+                <td id="index"><?php echo $information->donnee; ?></td>
                 <!-- ... -->
-                <td><i class="fa-solid fa-delete-left"></i></td>
+                <td ><i id="index" class="fa-solid fa-delete-left"></i></td>
                 <!-- <td>Icone de suppression de Font Awesome<td> -->
             </tr>
             <?php }?>

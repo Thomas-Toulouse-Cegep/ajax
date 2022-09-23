@@ -7,7 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function supprimerInformation(event) {
     const formdData= new FormData()
-    formData.append("information", $information);
-    formData.append("", $nombre);
-     fetch("index.php?action=information");
+    formData.append("index", index);
+    //formData.append("donnee", $donnee);
+     fetch("index.php?action=suprimmeinformation",{
+        method: "POST",
+        body: formData,
+    });
+    
 }
