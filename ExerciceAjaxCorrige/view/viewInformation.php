@@ -14,63 +14,93 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="table-primary">
                 <td></td>
-                <td>Default</td>
+                <td>Chipolatas</td>
                 <td>Defaultson</td>
                 <td>def@somemail.com</td>
             </tr>      
-            <tr class="table-primary">
+            <tr class="table-success">
                 <td></td>
-                <td>Primary</td>
+                <td>Chipolatas aux herbes</td>
                 <td>Joe</td>
                 <td>joe@example.com</td>
             </tr>
-            <tr class="table-success">
+            <tr class="table-danger">
                 <td></td>
-                <td>Success</td>
+                <td>Chorizo à griller</td>
                 <td>Doe</td>
                 <td>john@example.com</td>
             </tr>
-            <tr class="table-danger">
+            <tr class="table-warning">
                 <td></td>
-                <td>Danger</td>
+                <td>Crépinette</td>
                 <td>Moe</td>
                 <td>mary@example.com</td>
             </tr>
-            <tr class="table-info">
-                <td></td>
-                <td>Info</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
-            <tr class="table-warning">
+            <tr class="table-primary">
                 <td></td>
                 <td>Warning</td>
                 <td>Refs</td>
                 <td>bo@example.com</td>
             </tr>
-            <tr class="table-active">
+            <tr class="table-success">
                 <td></td>
-                <td>Active</td>
+                <td>Merguez</td>
                 <td>Activeson</td>
                 <td>act@example.com</td>
             </tr>
-            <tr class="table-secondary">
+            <tr class="table-danger">
                 <td></td>
-                <td>Secondary</td>
+                <td>Soubressade piquante</td>
                 <td>Secondson</td>
                 <td>sec@example.com</td>
             </tr>
-            <tr class="table-light">
+            <tr class="table-warning">
                 <td></td>
-                <td>Light</td>
+                <td>Saucisse au couteau</td>
                 <td>Angie</td>
                 <td>angie@example.com</td>
             </tr>
-            <tr class="table-dark">
+            <tr class="table-primary">
                 <td></td>
-                <td>Dark</td>
+                <td>Saucisse au piment d'Espelette</td>
+                <td>Bo</td>
+                <td>bo@example.com</td>
+            </tr>
+            <tr class="table-success">
+                <td></td>
+                <td>Saucisse campagnarde</td>
+                <td>Bo</td>
+                <td>bo@example.com</td>
+            </tr>
+            <tr class="table-danger">
+                <td></td>
+                <td>Saucisse de canard</td>
+                <td>Bo</td>
+                <td>bo@example.com</td>
+            </tr>
+            <tr class="table-warning">
+                <td></td>
+                <td>Saucisse de Toulouse</td>
+                <td>Bo</td>
+                <td>bo@example.com</td>
+            </tr>
+            <tr class="table-primary">
+                <td></td>
+                <td>Saucisse échalote</td>
+                <td>Bo</td>
+                <td>bo@example.com</td>
+            </tr>
+            <tr class="table-success">
+                <td></td>
+                <td>Saucisse méditerranéenne</td>
+                <td>Bo</td>
+                <td>bo@example.com</td>
+            </tr>
+            <tr class="table-danger">
+                <td></td>
+                <td>Saucisse T'chorizette</td>
                 <td>Bo</td>
                 <td>bo@example.com</td>
             </tr>
