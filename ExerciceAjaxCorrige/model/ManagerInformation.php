@@ -37,6 +37,8 @@ class ManagerInformation
     public function getInformations()
     {
         return $this->informations;
+        
     }
+    
    
 }
