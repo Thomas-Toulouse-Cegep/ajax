@@ -14,6 +14,9 @@ try {
         case 'information':
             information();
             break;
+        case 'supprimerInfo':
+            supprimerInfo();
+            break;
         default:
             throw new Exception('Aucune page spécifique demandée');
     }

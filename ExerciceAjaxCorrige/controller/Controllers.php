@@ -9,6 +9,19 @@ function accueil()
 function information()
 {
     $managerInformation = ManagerInformation::getInstance();
+    
+
     $informations = $managerInformation->getInformations();
     require 'view/viewInformation.php';
+}
+function supprimerInfo(){
+
+    if (isset($_POST['index']) ){
+        if (!empty ($_POST['index'])){
+            $donnee = htmlentities($_POST['index']);
+            $info = new ManagerInformation;
+            echo json_encode($info->suppInfo($donnee));
+        }
+    }
+
 }

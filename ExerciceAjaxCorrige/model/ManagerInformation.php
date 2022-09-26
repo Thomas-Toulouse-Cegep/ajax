@@ -37,7 +37,15 @@ class ManagerInformation
     public function getInformations()
     {
         return $this->informations;
+       
+        return null;
         
+    }
+    public function suppInfo($donnee){
+        if (array_key_exists($donnee, $this->informations)) {
+            return $this->informations[$donnee];
+        }
+        return null;
     }
     
    

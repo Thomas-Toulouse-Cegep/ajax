@@ -8,38 +8,39 @@ document.addEventListener("DOMContentLoaded", () => {
 function supprimerInformation(event) {
     const formData= new FormData()
     const element = event.currentTarget;
-    const donnee = element.value;
+    const index = element.values;
     formData.append("index", index);
+    
     console.log(index)
-    console.log(donnee)
     //formdData.
     //formData.append("donnee", $donnee);
-     fetch("index.php?action=suprimmeinformation",{
+     fetch("index.php?action=supprimerInfo",{
         method: "DELETE",
         body: formData,
     })
- /*       .then((reponse) => {
+        .then((reponse) => {
         if (!reponse.ok) {
             return [];
         }
+        console.log(reponse)
         return reponse.json();
     })        
-    .then(afficherInformation);
+    .then(supprimerInfo);
 }
-function afficherInformation(index) {
+function supprimerInfo(info) {
 // console.log(membres);
 // affiche les membre dans une table avec complexité
-const modele = document.querySelector("#ligneMembre");
+const modele = document.querySelector("#index");
 const tbody = document
     .querySelector("#tableInfo")
     .querySelector("tbody");
-Object.values(membres).forEach((membre,index)=> {
-    const clone = document.importNode(modele.content,true);
+    Object.values(info).forEach((donnee,index)=> {
+    const clone = document.removeChild(modele.content,true);
     const tds = clone.querySelectorAll("td");
     tds[0].textContent = index;
     
     tbody.appendChild(clone);
-});*/
+});
     
 }
 

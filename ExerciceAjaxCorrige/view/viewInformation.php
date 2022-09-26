@@ -18,7 +18,7 @@
             <tr scope="col-4">
                 <td id="index"><?php echo $information->donnee; ?></td>
                 <!-- ... -->
-                <td ><i id="index" class="fa-solid fa-delete-left"></i></td>
+                <td  ><i  class="fa-solid fa-delete-left"></i></td>
                 <!-- <td>Icone de suppression de Font Awesome<td> -->
             </tr>
             <?php }?>
