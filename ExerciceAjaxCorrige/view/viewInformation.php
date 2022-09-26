@@ -15,7 +15,7 @@
         </tbody>
         <tbody scope="col" >
             <?php foreach ($informations as $information) {?>
-            <tr scope="col-4">
+            <tr id="ligneinfo" scope="col-4">
                 <td id="index"><?php echo $information->donnee; ?></td>
                 <!-- ... -->
                 <td  ><i  class="fa-solid fa-delete-left"></i></td>

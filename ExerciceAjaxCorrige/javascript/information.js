@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function supprimerInformation(event) {
     const formData= new FormData()
-    const element = event.currentTarget;
-    const index = element.values;
+    const element = document.getElementById("index");
+    const index = element.innerHTML;
     formData.append("index", index);
     
-    console.log(index)
+    console.log("vous aves cliquer: ",index)
     //formdData.
     //formData.append("donnee", $donnee);
      fetch("index.php?action=supprimerInfo",{
@@ -23,14 +23,16 @@ function supprimerInformation(event) {
             return [];
         }
         console.log(reponse)
+        
         return reponse.json();
     })        
-    .then(supprimerInfo);
+   // .then(supprimerInfo);
+    
 }
 function supprimerInfo(info) {
 // console.log(membres);
 // affiche les membre dans une table avec complexité
-const modele = document.querySelector("#index");
+const modele = document.querySelector("#ligneinfo");
 const tbody = document
     .querySelector("#tableInfo")
     .querySelector("tbody");

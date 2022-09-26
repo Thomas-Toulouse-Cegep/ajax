@@ -44,7 +44,9 @@ class ManagerInformation
     public function suppInfo($donnee){
         if (array_key_exists($donnee, $this->informations)) {
             return $this->informations[$donnee];
+           
         }
+        echo $this[$donnee];
         return null;
     }
     
