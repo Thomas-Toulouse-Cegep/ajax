@@ -6,14 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function supprimerInformation(event) {
-    const formdData= new FormData()
+    const formData= new FormData()
     const element = event.currentTarget;
     const login = element.value;
     formData.append("index", index);
-    formdData.
+    console.log(index)
+    //formdData.
     //formData.append("donnee", $donnee);
      fetch("index.php?action=suprimmeinformation",{
-        method: "POST",
+        method: "DELETE",
         body: formData,
     });
     
