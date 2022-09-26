@@ -8,16 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
 function supprimerInformation(event) {
     const formData= new FormData()
     const element = event.currentTarget;
-    const login = element.value;
+    const donnee = element.value;
     formData.append("index", index);
     console.log(index)
+    console.log(donnee)
     //formdData.
     //formData.append("donnee", $donnee);
      fetch("index.php?action=suprimmeinformation",{
         method: "DELETE",
         body: formData,
     })
-        .then((reponse) => {
+ /*       .then((reponse) => {
         if (!reponse.ok) {
             return [];
         }
@@ -38,7 +39,7 @@ Object.values(membres).forEach((membre,index)=> {
     tds[0].textContent = index;
     
     tbody.appendChild(clone);
-});
+});*/
     
 }
 
