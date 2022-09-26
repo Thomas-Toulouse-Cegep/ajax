@@ -16,7 +16,29 @@ function supprimerInformation(event) {
      fetch("index.php?action=suprimmeinformation",{
         method: "DELETE",
         body: formData,
-    });
+    })
+        .then((reponse) => {
+        if (!reponse.ok) {
+            return [];
+        }
+        return reponse.json();
+    })        
+    .then(afficherInformation);
+}
+function afficherInformation(index) {
+// console.log(membres);
+// affiche les membre dans une table avec complexité
+const modele = document.querySelector("#ligneMembre");
+const tbody = document
+    .querySelector("#tableInfo")
+    .querySelector("tbody");
+Object.values(membres).forEach((membre,index)=> {
+    const clone = document.importNode(modele.content,true);
+    const tds = clone.querySelectorAll("td");
+    tds[0].textContent = index;
+    
+    tbody.appendChild(clone);
+});
     
 }
 

@@ -3,7 +3,7 @@
 <?php ob_start();?>
 
 <div class="container mt-3">
-    <table class="table mt-3">
+    <table class="table mt-3" id="tableInfo">
     <thead>
             <tr>
                 <th scope="col">Nom :</th>
@@ -11,7 +11,7 @@
             </tr>
         </thead>
         <tbody>
-         
+        
         </tbody>
         <tbody scope="col" >
             <?php foreach ($informations as $information) {?>
