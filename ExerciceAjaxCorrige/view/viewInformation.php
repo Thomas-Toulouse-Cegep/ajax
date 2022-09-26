@@ -3,9 +3,9 @@
 <?php ob_start();?>
 
 <div class="container mt-3">
-    <table class="table mt-3">
-    <thead>
-            <tr>
+    <table class="table mt-3 table-striped table-secondary">
+        <thead>
+            <tr class="table-dark">
                 <th scope="col">Nom :</th>
                 <th scope="col">Supprimer</th>
             </tr>
