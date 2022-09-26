@@ -6,16 +6,40 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function supprimerInformation(event) {
-    const formdData= new FormData()
+    const formData= new FormData()
     const element = event.currentTarget;
-    const login = element.value;
+    const donnee = element.value;
     formData.append("index", index);
-    formdData.
+    console.log(index)
+    console.log(donnee)
+    //formdData.
     //formData.append("donnee", $donnee);
      fetch("index.php?action=suprimmeinformation",{
-        method: "POST",
+        method: "DELETE",
         body: formData,
-    });
+    })
+ /*       .then((reponse) => {
+        if (!reponse.ok) {
+            return [];
+        }
+        return reponse.json();
+    })        
+    .then(afficherInformation);
+}
+function afficherInformation(index) {
+// console.log(membres);
+// affiche les membre dans une table avec complexité
+const modele = document.querySelector("#ligneMembre");
+const tbody = document
+    .querySelector("#tableInfo")
+    .querySelector("tbody");
+Object.values(membres).forEach((membre,index)=> {
+    const clone = document.importNode(modele.content,true);
+    const tds = clone.querySelectorAll("td");
+    tds[0].textContent = index;
+    
+    tbody.appendChild(clone);
+});*/
     
 }
 

@@ -11,7 +11,7 @@
             </tr>
         </thead>
         <tbody>
-         
+        
         </tbody>
         <tbody scope="col" >
             <?php foreach ($informations as $information) {?>
