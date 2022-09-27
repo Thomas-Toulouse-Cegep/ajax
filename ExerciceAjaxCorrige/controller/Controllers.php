@@ -17,12 +17,15 @@ function information()
 function supprimerInfo(){
 
     if (isset($_POST['index']) ){
-        if (!empty ($_POST['index'])){
+       // if (!empty ($_POST['index'])){
             $info = new ManagerInformation;
             echo json_encode($info->supprimerInfo());
-        }
-        echo json_encode($info->supprimerInfo());
+            
+        //}
+        
     }
+   // echo json_encode($info->supprimerInfo());
+   
    // echo json_encode($info->supprimerInfo());
 
 }

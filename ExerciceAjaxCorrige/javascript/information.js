@@ -6,40 +6,44 @@ document.addEventListener("DOMContentLoaded", () => {
      }
 });
 
-function supprimerInformation(event) {
+function supprimerInformation(event,$debut) {
     debugger
     const formData= new FormData()
-    const element = event.currentTarget;
-    /*const element = event.target=document.getElementById("ligneinfo");//.getElementById("index");
+    /*const element = event.currentTarget;
+    const I = document.getElementById("index");*/
+    
+    const lignes = document.getElementById("i").childNodes;
+    const element = event.target=document.getElementById("ligneinfo");//.getElementById("index");
     console.log(element.firstChild.value)
-    const index = element.textContent;*/
-    console.log( document.getElementById("i").childNodes);
-    document.getElementById("ligneinfo").remove();
+    const index = element.innerText;
+    //console.log( document.getElementById("i").childNodes);
+   // document.getElementById("ligneinfo").remove();
     //document.getElementById("ligneinfo").;
    // document.getElementById("ligneinfo").removeChild(element);
-    formData.append("index", index);
+    formData.append('index',$debut)
     
     //console.log("vous aves cliquer: ",index)
     //formdData.
    // formData.append("donnee", $donnee);
-     fetch("index.php?actsion=supprimerInfo",{
+     fetch("index.php?action=supprimerInfo",{
         method: "DELETE",
         body: formData,
     })
-      /*  .then((reponse) => {
+        .then((reponse) => {
         if (!reponse.ok) {
             return [];
         }
         console.log(reponse)
-        
-        debugger
-    }).then(supprimerInfo);*/
+        return reponse.json();
+       // debugger
+    }).then(supprimerInfo);
     
 }
-/*function supprimerInfo(informations) {
+function supprimerInfo(informations) {
+    debugger
     console.log(informations);
 // affiche les membre dans une table avec complexité
-const modele = document.querySelector("#ligneinfo");
+/*const modele = document.querySelector("#ligneinfo");
 console.log(modele)
 const tbody = document
     .querySelector("#tableInfo")
@@ -49,8 +53,7 @@ const tbody = document
     const tds = clone.querySelectorAll("td");
     tds[0].textContent = index;
     
-    tbody.remove(clone);
-});*/
-    
-//}
+    tbody.remove(clone);*/
+ /*});*/    
+}
 

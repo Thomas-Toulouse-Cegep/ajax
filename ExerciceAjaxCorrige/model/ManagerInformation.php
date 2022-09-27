@@ -7,11 +7,11 @@ class ManagerInformation
 
     private function __construct()
     {
-        $this->informations[0] = new Information("Chipolatas");
-        $this->informations[1] = new Information("Chipolatas aux herbes");
-        $this->informations[2] = new Information("Chorizo à griller");
-        $this->informations[3] = new Information("Merguez");
-        $this->informations[4] = new Information("Soubressade piquante");
+        $this->informations["Chipolatas"] = new Information("Chipolatas");
+        $this->informations["Chipolatas aux herbes"] = new Information("Chipolatas aux herbes");
+        $this->informations["Chorizo à griller"] = new Information("Chorizo à griller");
+        $this->informations["Merguez"] = new Information("Merguez");
+        /*$this->informations[4] = new Information("Soubressade piquante");
         $this->informations[5] = new Information("Saucisse au couteau");
         $this->informations[6] = new Information("Saucisse au piment d'Espelette");
         $this->informations[7] = new Information("Saucisse campagnarde");
@@ -19,7 +19,7 @@ class ManagerInformation
         $this->informations[9] = new Information("Saucisse de Toulouse");
         $this->informations[10] = new Information("Saucisse échalote");
         $this->informations[11] = new Information("Saucisse méditerranéenne");
-        $this->informations[12] = new Information("Saucisse T'chorizette");
+        $this->informations[12] = new Information("Saucisse T'chorizette");*/
     }
 
     public static function getInstance()
@@ -42,6 +42,7 @@ class ManagerInformation
         
     }
     public function supprimerInfo(){
+
         return $this->informations;
     }
     
