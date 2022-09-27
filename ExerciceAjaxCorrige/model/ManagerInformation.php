@@ -38,16 +38,11 @@ class ManagerInformation
     {
         return $this->informations;
        
-        return null;
+       
         
     }
-    public function suppInfo($donnee){
-        if (array_key_exists($donnee, $this->informations)) {
-            return $this->informations[$donnee];
-           
-        }
-        echo $this[$donnee];
-        return null;
+    public function supprimerInfo(){
+        return $this->informations;
     }
     
    

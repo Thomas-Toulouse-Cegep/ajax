@@ -18,10 +18,11 @@ function supprimerInfo(){
 
     if (isset($_POST['index']) ){
         if (!empty ($_POST['index'])){
-            $donnee = htmlentities($_POST['index']);
             $info = new ManagerInformation;
-            echo json_encode($info->suppInfo($donnee));
+            echo json_encode($info->supprimerInfo());
         }
+        echo json_encode($info->supprimerInfo());
     }
+   // echo json_encode($info->supprimerInfo());
 
 }

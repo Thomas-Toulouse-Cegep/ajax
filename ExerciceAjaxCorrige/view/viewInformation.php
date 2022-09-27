@@ -3,7 +3,7 @@
 <?php ob_start();?>
 
 <div class="container mt-3">
-    <table class="table mt-3 table-striped table-secondary">
+    <table id="tableInfo"class="table mt-3 table-striped table-secondary">
         <thead>
             <tr class="table-dark">
                 <th scope="col">Nom :</th>
@@ -13,12 +13,12 @@
         <tbody>
         
         </tbody>
-        <tbody scope="col" >
+        <tbody id="i" scope="col" >
             <?php foreach ($informations as $information) {?>
             <tr id="ligneinfo" scope="col-4">
-                <td id="index"><?php echo $information->donnee; ?></td>
+                <td id="index"><?php echo $information->donnee; ?>&nbsp;</td>
                 <!-- ... -->
-                <td  ><i  class="fa-solid fa-delete-left"></i></td>
+                <td id="icon"  ><i  class="fa-solid fa-delete-left"></i></td>
                 <!-- <td>Icone de suppression de Font Awesome<td> -->
             </tr>
             <?php }?>
