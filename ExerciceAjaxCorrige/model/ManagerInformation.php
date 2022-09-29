@@ -7,10 +7,10 @@ class ManagerInformation
 
     private function __construct()
     {
-        $this->informations["Chipolatas"] = new Information("Chipolatas");
-        $this->informations["Chipolatas aux herbes"] = new Information("Chipolatas aux herbes");
-        $this->informations["Chorizo à griller"] = new Information("Chorizo à griller");
-        $this->informations["Merguez"] = new Information("Merguez");
+        $this->informations["Chipolatas"] = new Information("Chipolatas",0);
+        $this->informations["Chipolatas aux herbes"] = new Information("Chipolatas aux herbes",1);
+        $this->informations["Chorizo à griller"] = new Information("Chorizo à griller",2);
+        $this->informations["Merguez"] = new Information("Merguez",3);
         /*$this->informations[4] = new Information("Soubressade piquante");
         $this->informations[5] = new Information("Saucisse au couteau");
         $this->informations[6] = new Information("Saucisse au piment d'Espelette");
@@ -41,9 +41,9 @@ class ManagerInformation
        
         
     }
-    public function supprimerInfo(){
+    public function supprimerInfo($ligneinfo){
 
-        return $this->informations;
+        unset($this->informations[$ligneinfo]);
     }
     
    

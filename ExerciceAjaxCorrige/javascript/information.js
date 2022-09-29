@@ -6,27 +6,30 @@ document.addEventListener("DOMContentLoaded", () => {
      }
 });
 
-function supprimerInformation(event,$debut) {
+function supprimerInformation(event) {
     debugger
     const formData= new FormData()
     /*const element = event.currentTarget;
     const I = document.getElementById("index");*/
-    
-    const lignes = document.getElementById("i").childNodes;
-    const element = event.target=document.getElementById("ligneinfo");//.getElementById("index");
-    console.log(element.firstChild.value)
-    const index = element.innerText;
+    const index = event.currentTarget;
+    const ligneinfo =index.parentNode.id;
+   // document.getElementById("ligneinfo"+ligneinfo)
+    console.log("ligneinfo: "+ligneinfo)
+    //const lignes = document.getElementById("i").childNodes;
+    //const element = event.target=document.getElementById("ligneinfo");//.getElementById("index");
+    //console.log(element.firstChild.value)
+    //const index = element.innerText;
     //console.log( document.getElementById("i").childNodes);
    // document.getElementById("ligneinfo").remove();
     //document.getElementById("ligneinfo").;
    // document.getElementById("ligneinfo").removeChild(element);
-    formData.append('index',$debut)
+    formData.append('index',ligneinfo)
     
     //console.log("vous aves cliquer: ",index)
     //formdData.
    // formData.append("donnee", $donnee);
      fetch("index.php?action=supprimerInfo",{
-        method: "DELETE",
+        method: "POST",
         body: formData,
     })
         .then((reponse) => {
@@ -41,7 +44,7 @@ function supprimerInformation(event,$debut) {
 }
 function supprimerInfo(informations) {
     debugger
-    console.log(informations);
+    console.log("pute: ",informations);
 // affiche les membre dans une table avec complexité
 /*const modele = document.querySelector("#ligneinfo");
 console.log(modele)
