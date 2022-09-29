@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
      }
 });
 
-function supprimerInformation(event,$debut) {
+function supprimerInformation(event) {
     debugger
     const formData= new FormData()
     /*const element = event.currentTarget;
@@ -14,13 +14,10 @@ function supprimerInformation(event,$debut) {
     
     const lignes = document.getElementById("i").childNodes;
     const element = event.target=document.getElementById("ligneinfo");//.getElementById("index");
-    console.log(element.firstChild.value)
+   // console.log(element.firstChild.value)
     const index = element.innerText;
-    //console.log( document.getElementById("i").childNodes);
-   // document.getElementById("ligneinfo").remove();
-    //document.getElementById("ligneinfo").;
-   // document.getElementById("ligneinfo").removeChild(element);
-    formData.append('index',$debut)
+   
+    formData.append('index',index)
     
     //console.log("vous aves cliquer: ",index)
     //formdData.
