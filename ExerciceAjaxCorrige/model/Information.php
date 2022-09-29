@@ -2,9 +2,10 @@
 class Information
 {
     public $donnee;
-
-    public function __construct($donnee)
+    public $index;
+    public function __construct($donnee,$index)
     {
         $this->donnee = $donnee;
+        $this->index = $index;
     }
 }

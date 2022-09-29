@@ -16,17 +16,20 @@ function information()
 }
 function supprimerInfo(){
 
-    if (isset($_DELETE['index']) ){
-        if (!empty ($_DELETE['index'])){
-            $info = new ManagerInformation;
-            echo "i";
-            echo json_encode($info->supprimerInfo());
+   // if (isset($_POST['index']) ){
+        $managerInformation = ManagerInformation::getInstance();
+        $managerInformation->supprimerInfo($_POST["index"]);
+
+       // if (!empty ($_POST['index'])){
+           // $info = new ManagerInformation;
+            //echo json_encode($info->supprimerInfo());
             
-        }
+        //}
         
     }
+        
+   // }
    // echo json_encode($info->supprimerInfo());
    
    // echo json_encode($info->supprimerInfo());
 
-}

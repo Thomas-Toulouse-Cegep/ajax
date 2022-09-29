@@ -16,7 +16,7 @@
         <tbody id="i" scope="col" >
             <?php foreach ($informations as $information) {?>
             <tr id="ligneinfo" scope="col-4">
-                <td id="index"><?php echo $information->donnee; ?>&nbsp;</td>
+                <td><?php echo $information->donnee; ?>;</td>
                 <!-- ... -->
                 <td id="icon"  ><i  class="fa-solid fa-delete-left"></i></td>
                 <!-- <td>Icone de suppression de Font Awesome<td> -->
