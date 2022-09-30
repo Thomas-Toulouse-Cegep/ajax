@@ -1,4 +1,4 @@
-function supprimerInfo(informations) {}
+function supprimerInfo(ligneinfo) {}
 document.addEventListener("DOMContentLoaded", () => {
     const iconesSuppression = document.getElementsByClassName("fa-solid fa-delete-left")
    for (const iconeSuppression of iconesSuppression) {
@@ -7,23 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function supprimerInformation(event) {
-    debugger
     const formData= new FormData()
     /*const element = event.currentTarget;
     const I = document.getElementById("index");*/
-<<<<<<< HEAD
-    
-    const lignes = document.getElementById("i").childNodes;
-    const element = event.target=document.getElementById("ligneinfo");//.getElementById("index");
-   // console.log(element.firstChild.value)
-    const index = element.innerText;
-   
-    formData.append('index',index)
-=======
+
+
     const index = event.currentTarget;
-    const ligneinfo =index.parentNode.id;
+    const ligneinfo =index.id;
    // document.getElementById("ligneinfo"+ligneinfo)
-    console.log("ligneinfo: "+ligneinfo)
+   // console.log("ligneinfo: "+ligneinfo)
     //const lignes = document.getElementById("i").childNodes;
     //const element = event.target=document.getElementById("ligneinfo");//.getElementById("index");
     //console.log(element.firstChild.value)
@@ -32,8 +24,8 @@ function supprimerInformation(event) {
    // document.getElementById("ligneinfo").remove();
     //document.getElementById("ligneinfo").;
    // document.getElementById("ligneinfo").removeChild(element);
-    formData.append('index',ligneinfo)
->>>>>>> 66c27ceefe916548642a7baf6c792f071a2fc1f7
+    formData.append("index",index);
+
     
     //console.log("vous aves cliquer: ",index)
     //formdData.
@@ -52,21 +44,24 @@ function supprimerInformation(event) {
     }).then(supprimerInfo);
     
 }
-function supprimerInfo(informations) {
-    debugger
-    console.log("pute: ",informations);
-// affiche les membre dans une table avec complexité
-/*const modele = document.querySelector("#ligneinfo");
-console.log(modele)
-const tbody = document
+function supprimerInfo(ligneinfo) {
+   // debugger;
+    console.log(ligneinfo);
+    // affiche les membre dans une table avec complexité
+    const modele = document.querySelector("#ligneinfo");
+    console.log(modele.children);
+    const tbody = document
     .querySelector("#tableInfo")
     .querySelector("tbody");
-    Object.innerHTML(info).forEach((donnee,index)=> {
-    const clone = document.removeChild(modele.content,true);
-    const tds = clone.querySelectorAll("td");
-    tds[0].textContent = index;
-    
-    tbody.remove(clone);*/
- /*});*/    
-}
+    const tds = modele.querySelectorAll("td");
 
+    tbody.removeChild(modele.remove(tds));
+/*Object.values(ligneinfo).forEach((ligneinfo,index)=> {
+        console.log(index) && console.log(ligneinfo)
+        const clone = document.importNode(modele,true);
+        const tds = clone.querySelectorAll("td");
+        clone[0].removeChild(tds);
+        console.log(clone) && console.log(tds)
+        tbody.append(tds);  
+    });*/
+}

@@ -13,7 +13,7 @@
         <tbody>
         
         </tbody>
-        <tbody id="i" scope="col" >
+        <tbody  scope="col" >
             <?php foreach ($informations as $information) {?>
             <tr id="ligneinfo" scope="col-4">
                 <td><?php echo $information->donnee; ?>;</td>

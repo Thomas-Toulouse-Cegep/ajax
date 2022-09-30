@@ -41,9 +41,9 @@ class ManagerInformation
        
         
     }
-    public function supprimerInfo($ligneinfo){
+    public function supprimerInfo(){
 
-        unset($this->informations[$ligneinfo]);
+        return $this->informations;
     }
     
    
