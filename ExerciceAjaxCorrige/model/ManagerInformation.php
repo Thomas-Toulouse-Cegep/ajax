@@ -7,19 +7,19 @@ class ManagerInformation
 
     private function __construct()
     {
-        $this->informations["Chipolatas"] = new Information("Chipolatas");
-        $this->informations["Chipolatas aux herbes"] = new Information("Chipolatas aux herbes");
-        $this->informations["Chorizo à griller"] = new Information("Chorizo à griller");
-        $this->informations["Merguez"] = new Information("Merguez");
-        $this->informations[4] = new Information("Soubressade piquante");
-        $this->informations[5] = new Information("Saucisse au couteau");
-        $this->informations[6] = new Information("Saucisse au piment d'Espelette");
-        $this->informations[7] = new Information("Saucisse campagnarde");
-        $this->informations[8] = new Information("Saucisse de canard");
-        $this->informations[9] = new Information("Saucisse de Toulouse");
-        $this->informations[10] = new Information("Saucisse échalote");
-        $this->informations[11] = new Information("Saucisse méditerranéenne");
-        $this->informations[12] = new Information("Saucisse T'chorizette");
+        $this->informations["Chipolatas"];
+        $this->informations["Chipolatas aux herbes"];
+        $this->informations["Chorizo à griller"];
+        $this->informations["Merguez"];
+        $this->informations["Soubressade piquante"];
+        $this->informations["Saucisse au couteau"];
+        $this->informations["Saucisse au piment d'Espelette"];
+        $this->informations["Saucisse campagnarde"];
+        $this->informations["Saucisse de canard"];
+        $this->informations["Saucisse de Toulouse"];
+        $this->informations["Saucisse échalote"];
+        $this->informations["Saucisse méditerranéenne"];
+        $this->informations["Saucisse T'chorizette"] ;
     }
 
     public static function getInstance()
@@ -37,9 +37,6 @@ class ManagerInformation
     public function getInformations()
     {
         return $this->informations;
-       
-       
-        
     }
     public function supprimerInfo(){
 

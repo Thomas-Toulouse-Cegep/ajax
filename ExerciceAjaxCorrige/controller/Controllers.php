@@ -16,12 +16,7 @@ function supprimerInfo(){
 
     if (isset($_POST['index'])&& (!empty ($_POST['index'])) ){
             $managerInformation = ManagerInformation::getInstance();
-            echo json_encode($managerInformation->supprimerInfo($_POST['index']));
-
-       // if (!empty ($_POST['index'])){
-           // $info = new ManagerInformation;
-            //echo json_encode($info->supprimerInfo());
-            
+            echo json_encode($managerInformation->supprimerInfo($_POST['index']));            
         }
         
     }

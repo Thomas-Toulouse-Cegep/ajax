@@ -3,7 +3,7 @@
 <?php ob_start();?>
 
 <div class="container mt-3">
-    <table id="tableInfo"class="table mt-3 table-striped table-secondary">
+    <table class="table mt-3 table-striped table-secondary">
         <thead>
             <tr class="table-dark">
                 <th scope="col">Nom :</th>
@@ -18,7 +18,7 @@
             <tr id="ligneinfo" scope="col-4">
                 <td><?php echo $information->donnee; ?>;</td>
                 <!-- ... -->
-                <td id="icon"  ><i  class="fa-solid fa-delete-left"></i></td>
+                <td ><i  class="fa-solid fa-delete-left"></i></td>
                 <!-- <td>Icone de suppression de Font Awesome<td> -->
             </tr>
             <?php }?>
