@@ -55,13 +55,6 @@ function supprimerInfo(ligneinfo) {
     .querySelector("tbody");
     const tds = modele.querySelectorAll("td");
 
-    tbody.removeChild(modele.remove(tds));
-/*Object.values(ligneinfo).forEach((ligneinfo,index)=> {
-        console.log(index) && console.log(ligneinfo)
-        const clone = document.importNode(modele,true);
-        const tds = clone.querySelectorAll("td");
-        clone[0].removeChild(tds);
-        console.log(clone) && console.log(tds)
-        tbody.append(tds);  
-    });*/
+    modele.remove(tds);
+
 }
